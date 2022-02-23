@@ -1,194 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!--My CSS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-
-    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
   </head>
-  <body id="home">
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #9acd32">
-      <div class="container">
-        <a class="navbar-brand" href="#">Muhammad Dean Fahreza</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Galery of My Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Me</a>
-            </li>
-          </ul>
-        </div>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li><a href="#banner">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#teams">Teams</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </nav>
-    <!--akhir navbar-->
-
-    <!--Jumbotron-->
-    <section class="jumbotron text-center">
-      <img src="img/myself.jpg" alt="Myself :3" width="200" class="rounded-circle" />
-      <h1 class="display-4">Muhammad Dean Fahreza</h1>
-      <p class="lead">College Student at Gunadarma University</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#f3f4f5"
-          fill-opacity="1"
-          d="M0,96L30,85.3C60,75,120,53,180,90.7C240,128,300,224,360,234.7C420,245,480,171,540,122.7C600,75,660,53,720,69.3C780,85,840,139,900,133.3C960,128,1020,64,1080,37.3C1140,11,1200,21,1260,69.3C1320,117,1380,203,1410,245.3L1440,288L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!--Akhir Jumbotron-->
-
-    <!--About-->
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
+      <div class="main">
+        <div class="topbar">
+          <a href="#" class="logo">Portfolio</a>
+          <div class="toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <!--Banner-->
+        <section class="banner" id="banner">
+          <div class="content">
+            <div class="imgBx">
+              <img src="img/user.jpg" alt="Myself :333" />
+            </div>
+            <h3>Muhammad Dean Fahreza</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="cv/My CV.pdf" class="btn" download="CV">Download my CV</a>
+            <ul class="socialMedia">
+              <li>
+                <a href="#"><i class="fa-solid fa-at"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-reddit"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--Akhir Banner-->
+        <!-- About -->
+        <section class="about adjust" id="about">
+          <div class="title">
             <h2>About Me</h2>
           </div>
-        </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="content">
+            <div class="textBox">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quo maiores pariatur assumenda sapiente cupiditate voluptas voluptatum reprehenderit cum eum facere ab, accusamus exercitationem blanditiis id iusto?
+                Accusantium rerum laboriosam quidem! Cumque magni praesentium, vel esse incidunt veniam animi beatae, nihil itaque voluptate repellendus dolor impedit ab error voluptatem. Ullam ipsum iste beatae accusantium officiis dolore
+                sequi fuga nesciunt adipisci ab pariatur, neque molestiae repudiandae eligendi deleniti reprehenderit deserunt repellat explicabo qui. Facilis minima explicabo sequi vero. Nobis corporis facilis architecto iste. Animi
+                molestias non ut beatae, deleniti illo officiis laudantium veritatis nostrum a error illum assumenda ipsa dignissimos autem! Doloremque nesciunt rem minus magni perferendis officiis sunt explicabo facere, dolorem quia?
+                <br /><br />
+                Voluptatibus, officiis modi deserunt dolore molestiae perspiciatis alias nostrum tempora accusantium sint rerum minima blanditiis mollitia nam maiores quisquam, tempore libero ipsam ut itaque laboriosam excepturi illum
+                incidunt nulla? Recusandae nihil labore id doloremque harum, debitis dignissimos, provident in ex sed impedit consequuntur ipsam quod assumenda ratione consectetur sapiente ab minus totam ad eveniet magni explicabo. Eum
+                architecto consequatur incidunt porro libero earum! Maxime dolorem ipsum magni perferendis explicabo rerum nam facilis quis, pariatur temporibus ab, doloribus voluptatem. Quia, architecto ea in, voluptate commodi placeat
+                voluptatum omnis enim adipisci et veritatis eligendi nostrum porro totam? Laboriosam ut a aliquam assumenda iure repellendus ea facilis tempora quod porro consectetur eveniet nobis quo dolorem rerum expedita, deserunt, non
+                natus nemo eaque. Doloribus, quo ipsam ullam autem, sequi eligendi harum dignissimos, repellendus fugit molestiae magnam enim dolorem. Voluptates officiis maiores et.
+              </p>
+            </div>
+            <div class="imgBx">
+              <img src="img/bg1.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- Akhir About -->
+        <!-- Teams -->
+        <section class="teams adjust" id="teams">
+          <div class="title">
+            <h2>My Teams</h2>
             <p>
-              Hello guys what are you doin' here? nothing interest at my Portfolio. sorry :) 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam neque debitis asperiores numquam provident porro quisquam veritatis, soluta iusto. Beatae id voluptatum laboriosam eveniet consequatur soluta earum. Sit, in ea.
             </p>
           </div>
-          <div class="col-md-4">
-            <p>
-              Just kidding. I'm now study at Gunadarma University and now in Semester 3. I Love codes (but yeah i'm still beginner). In this Portfolio, i'm gonna to show my Projects about Machine
-              Learning or People know it as Artificial Intelligence (AI/ML). In this case, i gonna to show it a little bit about my ML bout A Converter Picture. 
-            </p>
+          <div class="content">
+            <div class="teamsBox">
+              <a href="#"><img src="img/icon1.png" alt="" /></a>
+              <h2>Bellshade Member</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laboriosam repudiandae, quisquam inventore est officiis! Tempore repudiandae quos ab necessitatibus facilis saepe omnis aspernatur, inventore perspiciatis illo
+                repellendus nam voluptate?
+              </p>
+            </div>
+            <div class="teamsBox">
+              <a href="#"><img src="img/icon2.png" alt="" /></a>
+              <h2>Bellshade Member</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laboriosam repudiandae, quisquam inventore est officiis! Tempore repudiandae quos ab necessitatibus facilis saepe omnis aspernatur, inventore perspiciatis illo
+                repellendus nam voluptate?
+              </p>
+            </div>
+            <div class="teamsBox">
+              <a href="#"><img src="img/icon3.png" alt="" /></a>
+              <h2>Bellshade Member</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laboriosam repudiandae, quisquam inventore est officiis! Tempore repudiandae quos ab necessitatibus facilis saepe omnis aspernatur, inventore perspiciatis illo
+                repellendus nam voluptate?
+              </p>
+            </div>
+            <div class="teamsBox">
+              <a href="#"><img src="img/icon4.png" alt="" /></a>
+              <h2>Bellshade Member</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laboriosam repudiandae, quisquam inventore est officiis! Tempore repudiandae quos ab necessitatibus facilis saepe omnis aspernatur, inventore perspiciatis illo
+                repellendus nam voluptate?
+              </p>
+            </div>
+            <div class="teamsBox">
+              <a href="#"><img src="img/icon5.png" alt="" /></a>
+              <h2>Bellshade Member</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laboriosam repudiandae, quisquam inventore est officiis! Tempore repudiandae quos ab necessitatibus facilis saepe omnis aspernatur, inventore perspiciatis illo
+                repellendus nam voluptate?
+              </p>
+            </div>
+            <div class="teamsBox">
+              <a href="#"><img src="img/icon6.png" alt="" /></a>
+              <h2>Bellshade Member</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laboriosam repudiandae, quisquam inventore est officiis! Tempore repudiandae quos ab necessitatibus facilis saepe omnis aspernatur, inventore perspiciatis illo
+                repellendus nam voluptate?
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#12e4eb"
-          fill-opacity="1"
-          d="M0,256L10,224C20,192,40,128,60,117.3C80,107,100,149,120,149.3C140,149,160,107,180,90.7C200,75,220,85,240,101.3C260,117,280,139,300,160C320,181,340,203,360,224C380,245,400,267,420,234.7C440,203,460,117,480,101.3C500,85,520,139,540,165.3C560,192,580,192,600,208C620,224,640,256,660,266.7C680,277,700,267,720,234.7C740,203,760,149,780,154.7C800,160,820,224,840,218.7C860,213,880,139,900,117.3C920,96,940,128,960,154.7C980,181,1000,203,1020,218.7C1040,235,1060,245,1080,261.3C1100,277,1120,299,1140,293.3C1160,288,1180,256,1200,256C1220,256,1240,288,1260,288C1280,288,1300,256,1320,234.7C1340,213,1360,203,1380,192C1400,181,1420,171,1430,165.3L1440,160L1440,320L1430,320C1420,320,1400,320,1380,320C1360,320,1340,320,1320,320C1300,320,1280,320,1260,320C1240,320,1220,320,1200,320C1180,320,1160,320,1140,320C1120,320,1100,320,1080,320C1060,320,1040,320,1020,320C1000,320,980,320,960,320C940,320,920,320,900,320C880,320,860,320,840,320C820,320,800,320,780,320C760,320,740,320,720,320C700,320,680,320,660,320C640,320,620,320,600,320C580,320,560,320,540,320C520,320,500,320,480,320C460,320,440,320,420,320C400,320,380,320,360,320C340,320,320,320,300,320C280,320,260,320,240,320C220,320,200,320,180,320C160,320,140,320,120,320C100,320,80,320,60,320C40,320,20,320,10,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!--Akhir About-->
-
-    <!--Projects-->
-    <section id="projects">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
+        </section>
+        <!-- Akhir Teams -->
+        <!-- Skills -->
+        <section class="skills adjust" id="skills">
+          <div class="title">
+            <h2>Skills</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="content">
+            <div class="skillsBox">
+              <div class="imgBx">
+                <img src="img/user1.jpg" alt="" />
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim incidunt labore animi ut architecto, illo sint deserunt quidem! Nam aliquam iure dolores optio distinctio quidem maiores ex repellat aperiam aut.</p>
+              <h4>Some famous <br /><span>Website Designer</span></h4>
+            </div>
+            <div class="skillsBox">
+              <div class="imgBx">
+                <img src="img/user2.jpg" alt="" />
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim incidunt labore animi ut architecto, illo sint deserunt quidem! Nam aliquam iure dolores optio distinctio quidem maiores ex repellat aperiam aut.</p>
+              <h4>Some famous <br /><span>Website Designer</span></h4>
+            </div>
+            <div class="skillsBox">
+              <div class="imgBx">
+                <img src="img/user3.jpg" alt="" />
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim incidunt labore animi ut architecto, illo sint deserunt quidem! Nam aliquam iure dolores optio distinctio quidem maiores ex repellat aperiam aut.</p>
+              <h4>Some famous <br /><span>Website Designer</span></h4>
+            </div>
+          </div>
+        </section>
+        <!-- Akhir Skills -->
+        <!-- Porjects -->
+        <section class="projects adjust" id="projects">
+          <div class="title">
             <h2>My Projects</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsa eligendi hic. Veniam rerum inventore pariatur distinctio officiis? Autem a neque natus tenetur sequi vel nisi. Nam quasi corporis non?</p>
           </div>
+          <div class="content">
+            <div class="workBx">
+              <div class="imgBx">
+                <img src="img/img1.jpg" alt="" />
+              </div>
+              <div class="textBx">
+                <h3>Project01</h3>
+              </div>
+            </div>
+            <div class="workBx">
+              <div class="imgBx">
+                <img src="img/img2.jpg" alt="" />
+              </div>
+              <div class="textBx">
+                <h3>Project02</h3>
+              </div>
+            </div>
+            <div class="workBx">
+              <div class="imgBx">
+                <img src="img/img3.jpg" alt="" />
+              </div>
+              <div class="textBx">
+                <h3>Project03</h3>
+              </div>
+            </div>
+            <div class="workBx">
+              <div class="imgBx">
+                <img src="img/img4.jpg" alt="" />
+              </div>
+              <div class="textBx">
+                <h3>Project04</h3>
+              </div>
+            </div>
+            <div class="workBx">
+              <div class="imgBx">
+                <img src="img/img5.jpg" alt="" />
+              </div>
+              <div class="textBx">
+                <h3>Project05</h3>
+              </div>
+            </div>
+            <div class="workBx">
+              <div class="imgBx">
+                <img src="img/img6.jpg" alt="" />
+              </div>
+              <div class="textBx">
+                <h3>Project06</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Akhir Porjects -->
+        <!-- Contact -->
+        <section class="contact adjust" id="contact">
+          <div class="title">
+            <h2>Let's chat with me &#128515;</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, consequatur!</p>
+          </div>
+          <div class="contactForm">
+            <div class="row">
+              <input type="text" name="" placeholder="Nama Depan" />
+              <input type="text" name="" placeholder="Nama Belakang" />
+            </div>
+            <div class="row">
+              <input type="text" name="" placeholder="E-Mail" />
+              <input type="text" name="" placeholder="No. Telepon" />
+            </div>
+            <div class="row2">
+              <textarea name="" id="" placeholder="pesan"></textarea>
+            </div>
+            <div class="row2">
+              <input type="submit" value="Submit">
+            </div>
+          </div>
+        </section>
+        <!-- Akhir Contact -->
+        <!-- Copyright Text -->
+        <div class="copyright">
+          <p>Copyright <i class="fa-solid fa-copyright"></i> 2022 <a href="">Muhammad Dean Fahreza</a>. All Rights Reserved</p>
         </div>
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/Mercedes Lewis Hamilton 2016.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Mercedes AMG F1 Lewis Hamilton 2018</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/Force India Mercedes Esteban Ocon 2017.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Force India Mercedes Esteban Ocon 2018</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/Ferrari Charles Leclerc 2019.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Ferrari Charles Leclerc 2019</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/Ferrari.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Ferrari Converter using Machine Learning</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/Mercedes.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Mercedes Converter using Machine Learning</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/Aston Martin.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Aston Martin Converter using Machine Learning</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Akhir Copyright Text -->
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,288L8,282.7C16,277,32,267,48,266.7C64,267,80,277,96,250.7C112,224,128,160,144,149.3C160,139,176,181,192,165.3C208,149,224,75,240,69.3C256,64,272,128,288,149.3C304,171,320,149,336,122.7C352,96,368,64,384,64C400,64,416,96,432,138.7C448,181,464,235,480,218.7C496,203,512,117,528,85.3C544,53,560,75,576,96C592,117,608,139,624,165.3C640,192,656,224,672,234.7C688,245,704,235,720,208C736,181,752,139,768,133.3C784,128,800,160,816,160C832,160,848,128,864,117.3C880,107,896,117,912,144C928,171,944,213,960,208C976,203,992,149,1008,138.7C1024,128,1040,160,1056,186.7C1072,213,1088,235,1104,208C1120,181,1136,107,1152,101.3C1168,96,1184,160,1200,181.3C1216,203,1232,181,1248,170.7C1264,160,1280,160,1296,165.3C1312,171,1328,181,1344,181.3C1360,181,1376,171,1392,144C1408,117,1424,75,1432,53.3L1440,32L1440,320L1432,320C1424,320,1408,320,1392,320C1376,320,1360,320,1344,320C1328,320,1312,320,1296,320C1280,320,1264,320,1248,320C1232,320,1216,320,1200,320C1184,320,1168,320,1152,320C1136,320,1120,320,1104,320C1088,320,1072,320,1056,320C1040,320,1024,320,1008,320C992,320,976,320,960,320C944,320,928,320,912,320C896,320,880,320,864,320C848,320,832,320,816,320C800,320,784,320,768,320C752,320,736,320,720,320C704,320,688,320,672,320C656,320,640,320,624,320C608,320,592,320,576,320C560,320,544,320,528,320C512,320,496,320,480,320C464,320,448,320,432,320C416,320,400,320,384,320C368,320,352,320,336,320C320,320,304,320,288,320C272,320,256,320,240,320C224,320,208,320,192,320C176,320,160,320,144,320C128,320,112,320,96,320C80,320,64,320,48,320C32,320,16,320,8,320L0,320Z"></path></svg>
-    </section>
-    <!--Akhir Projects-->
+    </div>
+    <script>
+      let toggle = document.querySelector(".toggle");
+      let topbar = document.querySelector(".topbar");
+      let navigation = document.querySelector(".navigation");
+      let main = document.querySelector(".main");
 
-    <!--Contact-->
-    <selction id="contact">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
-              </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Message</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-success">Submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,160L60,144C120,128,240,96,360,101.3C480,107,600,149,720,144C840,139,960,85,1080,85.3C1200,85,1320,139,1380,165.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    </section>
-    <!--Akhir Contact-->
-
-    <!--Footer-->
-    <footer class="bg-light text-black text-center pb-5">
-      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/deannn.f/" class="text-black fw-bolder fst-italic">Muhammad Dean Fahreza</a></p>
-    </footer>
-    <!--Akhir Footer-->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+      toggle.onclick = function () {
+        toggle.classList.toggle("active");
+        topbar.classList.toggle("active");
+        navigation.classList.toggle("active");
+        main.classList.toggle("active");
+      };
+    </script>
   </body>
 </html>
